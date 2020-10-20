@@ -136,7 +136,7 @@ In the above diagram, we set a base lr and max lr for the algorithm, demarcated 
 * Deriving the optimal base lr and max lr: An optimal lower and upper bound of the learning rate can be found by letting the model run for a few epochs, letting the learning rate increase linearly and monitoring the accuracy. We run a complete step by setting stepsize equal to num_iterations (This will make the LR increase linearly and stop as num_iterations is reached). We also set base lr to a minimum value and max lr to a maximum value that we deem fit.
 * Deriving the optimal cycle length (or stepsize): The paper suggests, after experimentation, that the stepsize be set to 2-10 times the number of iterations in an epoch. In the previous example, since we had 500 iterations per epoch, setting stepsize from 1000 to 5000 would do. The paper found not much difference in setting stepsize to 2 times num of iterations in an epoch than 8 times so.
 
-##  6. <a name='Howtoterainastateoftheartclassifier:'></a>How to terain a state of the art classifier :
+##  6. <a name='Howtotrainastateoftheartclassifier:'></a>How to train a state of the art classifier :
 
 1. Use data augmentation and pretrained models
 2. Use Cyclical Learning Rates to find highest learning rate where loss is still clearly improving
